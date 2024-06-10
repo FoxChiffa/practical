@@ -1,4 +1,4 @@
-const PREFIX = "http://localhost:10000/";
+const PREFIX = "https://practical-rwd6.onrender.com/";
 
 const req = (url, options = {}) => {
   const { body } = options;
