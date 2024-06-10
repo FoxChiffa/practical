@@ -1,4 +1,4 @@
-const PREFIX = "http://localhost:3000/";
+const PREFIX = "http://localhost:10000/";
 
 const req = (url, options = {}) => {
   const { body } = options;
