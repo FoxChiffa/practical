@@ -11,7 +11,6 @@ const app = express();
 require('dotenv').config();
 
 const clientPromise = new MongoClient('mongodb+srv://user:wsSdw2%25%40sdfas@cluster0.djhvcyg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
-  useUnifiedTopology: true
 })
 
 app.use(cookieParser());
