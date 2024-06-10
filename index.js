@@ -10,7 +10,7 @@ const markdownit = require('markdown-it');
 const app = express();
 require('dotenv').config();
 
-const clientPromise = new MongoClient(process.env.DB_URI, {
+const clientPromise = new MongoClient('mongodb+srv://user:wsSdw2%25%40sdfas@cluster0.djhvcyg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
   useUnifiedTopology: true
 })
 
@@ -25,7 +25,7 @@ app.set("view engine", "njk");
 
 app.use(express.json());
 app.use(express.static("public"));
-app.use(cors({credentials: true, origin: 'http://localhost:4000'}));
+app.use(cors({credentials: true, origin: 'https://practical-rwd6.onrender.com'}));
 
 app.use(async (req, res, next) => {
   try {

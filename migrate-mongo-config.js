@@ -2,7 +2,7 @@ require('dotenv').config();
 
 const config = {
   mongodb: {
-    url: process.env.DB_URI,
+    url: 'mongodb+srv://user:wsSdw2%25%40sdfas@cluster0.djhvcyg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',
 
     // TODO Change this to your database name:
     databaseName: "node",
