@@ -10,8 +10,9 @@ const markdownit = require('markdown-it');
 const app = express();
 require('dotenv').config();
 
-const clientPromise = new MongoClient('mongodb+srv://user:wsSdw2%25%40sdfas@cluster0.djhvcyg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
-})
+const uri = 'mongodb+srv://user:wsSdw2%25%40sdfas@cluster0.djhvcyg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+
+const clientPromise = new MongoClient(uri);
 
 app.use(cookieParser());
 
