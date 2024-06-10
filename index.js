@@ -12,6 +12,10 @@ require('dotenv').config();
 
 const uri = 'mongodb+srv://user:wsSdw2%25%40sdfas@cluster0.djhvcyg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
+global.performance = global.performance || {
+  now: () => new Date().getTime(),
+};
+
 const clientPromise = new MongoClient(uri);
 
 app.use(cookieParser());
